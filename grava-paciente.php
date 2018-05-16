@@ -1,6 +1,7 @@
 <?php
 include ('connection.php');
 // MUDAR PARA E-MAIL DA EMPRESA
+// teste
 $emailsender='mail@mail.com';
 $assunto 	= '[Clínica Bragalha - Cadastro]';
 

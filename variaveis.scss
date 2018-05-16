@@ -1,0 +1,35 @@
+/*====================================
+DIMENSÕES
+====================================*/
+$largura-conteudo: 1100px;
+/*CLASSES DE CENTRALIZAÇÃO*/
+
+// CORES
+$magenta: #b72d49;
+$cinza: #58585b;
+
+// FONTE
+// FONTE
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+$fonte: 'Open Sans', sans-serif;
+
+/*===========================
+CLASSES DE CENTRALIZAÇÃO
+===========================*/
+.centralizar-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.centralizar-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.centralizar-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

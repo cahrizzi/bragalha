@@ -1,0 +1,117 @@
+@import 'variaveis.scss';
+.boxform {
+	width: 600px;
+    @extend .centralizar-xy;
+}
+.logo {
+    width: 287px;
+    margin: 0 auto;
+}
+.boxform-cadastro {
+	padding: 20px;
+	-webkit-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.26);
+	-moz-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.26);
+	box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.26);
+	overflow: hidden
+}
+.titulo {
+    font-family: $fonte;
+    color: $magenta;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.label-pdf {
+	font-family: $fonte;
+	color: 	$magenta;
+	font-size: 1.5em;
+	font-weight: 300px;
+	margin-bottom: 2px;
+	display: block;
+}
+iframe {
+	width: 100%;
+	border: none;
+	height: 600px;
+
+}
+.inputs-duplo {
+	width: 100%;
+	overflow: hidden;
+	input, select{
+		width: 49%;
+		float: left; 
+		margin-right: 2%;
+
+		border: 1px solid rgba(0,0,0,0.1);
+		padding: 10px;
+		margin-bottom: 10px;
+
+		font-family: $fonte;
+		font-size: 1.5em;
+		font-weight: 300px;
+	}
+	input:last-child {
+		margin-right: 0;
+	}
+}
+#especialidade {
+	height: 44px;
+}
+input[type="submit"] {
+	padding: 5px 10px;
+	background: $magenta;
+	color: #FFF;
+	float: right; 
+	border: none;
+	font-family: $fonte;
+	font-size: 1.5em;
+	font-weight: 300px;
+	text-transform: uppercase;
+}
+#especialidade {
+	margin: 0!important;
+	padding: 0!important;
+	font-family: $fonte;
+	font-size: 1.5em;
+	font-weight: 300px;
+	color: 	rgba(0, 0, 0, .55);
+}
+.container-centralizado {
+	width: 90%;
+	margin: 0 auto;
+}
+.container-lista {
+	width: 90%;
+	overflow: hidden;
+	background: rgba(0,0,0,.1);
+	margin: 0 auto;
+	margin-bottom: 1px;
+	li {
+		width: 25%;
+		float: left;
+		padding: 10px;
+		a {
+			font-family: $fonte;
+			font-size: 1.5em;
+			font-weight: 700px!important;
+			color: 	$magenta;
+		}
+	}
+}
+.titulo-lista {
+	font-family: $fonte;
+	font-size: 1.5em;
+	font-weight: 700px!important;
+	color: 	$magenta;
+	text-transform: uppercase;
+}
+.resultado-lista {
+	font-family: $fonte;
+	font-size: 1.5em;
+	font-weight: 300px;
+	color: 	$cinza;
+}
+.icone-download {
+	width: 30px;
+	margin: 0 auto;
+}

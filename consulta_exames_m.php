@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	include ('connection.php');
 	//include ('/public/site/wp-content/themes/medics/page-template/get_nm_user.php');	
  

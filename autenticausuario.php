@@ -1,5 +1,4 @@
 <?php
-session_start();
 include ('connection.php');
 
 $msgerr							=			"Não logado";
@@ -8,7 +7,8 @@ $_SESSION['email']	=			$_POST['email-cliente'];
 $url 								=			'area-restrita.php';
 
 
-$sql_auth = $conn->query("SELECT * FROM cliente WHERE nome_cliente ='".$_SESSION['nome']."' AND email_cliente = '".$_SESSION['email']."';");
+
+$sql_auth = $conn->query("SELECT * FROM cliente WHERE cpf_cliente ='".$_SESSION['nome']."' AND email_cliente = '".$_SESSION['email']."';");
 
 $rows =	mysqli_num_rows($sql_auth);
 

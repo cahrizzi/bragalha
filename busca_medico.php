@@ -1,13 +1,14 @@
 <?php
-//define('DB_SERVER', 'localhost');
-//define('DB_USER', 'root');
-//define('DB_PASSWORD', 'root');
-//define('DB_NAME', 'sistema-cliente');
+define('DB_SERVER', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'wordpress');
 
-define('DB_SERVER', 'sistema_client.mysql.dbaas.com.br');
-define('DB_USER', 'sistema_client');
-define('DB_PASSWORD', 'side316@pro');
-define('DB_NAME', 'sistema_client');
+//define('DB_SERVER', 'sistema_client.mysql.dbaas.com.br');
+//define('DB_USER', 'sistema_client');
+//define('DB_PASSWORD', 'side316@pro');
+//define('DB_NAME', 'sistema_client');
+
 
 
 if (isset($_GET['term'])){

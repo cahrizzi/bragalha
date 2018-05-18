@@ -13,7 +13,7 @@ else die("Este script nao esta preparado para funcionar com o sistema operaciona
 // DADOS DO FORM
 $nome 				= $_POST['nome-cliente'];
 $email 				= $_POST['email-cliente'];
-$cpf 				= $_POST['email-cliente'];
+$cpf 				= $_POST['cpf-cliente'];
 $telefone 		    = $_POST['telefone-cliente'];
 
 /* Montando a mensagem a ser enviada no corpo do e-mail. */

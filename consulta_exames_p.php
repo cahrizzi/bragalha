@@ -1,5 +1,4 @@
 <?php
-session_start();
 // Consulta Exame Paciente
 include ('connection.php');
 ?>

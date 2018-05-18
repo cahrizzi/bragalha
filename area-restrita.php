@@ -71,7 +71,7 @@ $(function() {
 				dateFormat: "dd/mm/yy",
 				changeMonth: true,
 				changeYear: true
-		});
+    });
 });				
 </script>
 </body>

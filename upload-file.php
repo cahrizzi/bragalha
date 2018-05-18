@@ -15,10 +15,15 @@ set_time_limit(0);
 // Funcao Insert ao enviar arquivo ao FPT
 function enviado($nome_paciente,$nome_medico,$especialidade,$nome_arquivo,$destino,$data_exame){
 	
-	$servidor="sistema_client.mysql.dbaas.com.br";
-	$usuario="sistema_client";
-	$senha="side316@pro";
-	$dbname="sistema_client";
+    $servidor="localhost";
+	$usuario="root";
+	$senha="";
+	$dbname="sistema_bragalha";
+    
+//	$servidor="sistema_client.mysql.dbaas.com.br";
+//	$usuario="sistema_client";
+//	$senha="side316@pro";
+//	$dbname="sistema_client";
 	$conn=mysqli_connect($servidor,$usuario, $senha, $dbname);
 	
 	$consulta = "select cpf_cliente from cliente where nome_cliente LIKE '%".$nome_paciente."%'";
@@ -29,39 +34,40 @@ function enviado($nome_paciente,$nome_medico,$especialidade,$nome_arquivo,$desti
 	if($result2->num_rows > 0){
     echo $result2->fetch_object()->email_cliente;
 	}
-		echo "erro";
+    
+//		echo "erro";
 	
 	
-//	while ($dado = $result -> fetch_array()) {		
-//		$sql = "INSERT INTO resultado_exames 
-//						(nome_paciente, 
-//						cpf_paciente, 
-//						medico_exame, 
-//						especialidade_exame, 
-//						dt_exame, 
-//						file_name, 
-//						file_uploaded, 
-//						dt_upload)
-//						VALUES						
-//						('{$nome_paciente}',
-//						'{$dado['cpf_cliente']}',
-//						'{$nome_medico}',
-//						'{$especialidade}',
-//						'{$data_exame}',
-//						'{$nome_arquivo}',
-//						'{$destino}', 
-//						NOW())";
+	while ($dado = $result -> fetch_array()) {		
+		$sql = "INSERT INTO resultado_exames 
+						(nome_paciente, 
+						cpf_paciente, 
+						medico_exame, 
+						especialidade_exame, 
+						dt_exame, 
+						file_name, 
+						file_uploaded, 
+						dt_upload)
+						VALUES						
+						('{$nome_paciente}',
+						'{$dado['cpf_cliente']}',
+						'{$nome_medico}',
+						'{$especialidade}',
+						'{$data_exame}',
+						'{$nome_arquivo}',
+						'{$destino}', 
+						NOW())";
 	
-//			if ($conn->query($sql) === TRUE) {
+			if ($conn->query($sql) === TRUE) {
 //					
-//					//echo "Insert no banco realizado com sucesso!";
-//					//echo $dado['cpf_cliente'];
-//			} else {
-//					echo "Error: " . $sql . "<br>" . $conn->error;
-//			}
-//	
+//					echo "Insert no banco realizado com sucesso!";
+//					echo $dado['cpf_cliente'];
+			} else {
+					echo "Error: " . $sql . "<br>" . $conn->error;
+			}
 	
-		//}	
+	
+		}	
 	}
 	
 	
